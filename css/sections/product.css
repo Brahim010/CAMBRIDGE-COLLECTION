@@ -1,0 +1,99 @@
+.featuredProducts{
+    padding-top: 5rem;
+}
+.featuredProducts h1{
+    text-align: center;
+}
+.featuredProducts span{
+    color: #ff622e;
+}
+.Card{
+    position: relative;
+    margin: 50px ;
+    padding: 10px;
+    width: 70%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    transition: all .40s;
+    background-color: #fff;
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: upppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.Card:hover{
+    transform: scale(.9);
+}
+.Card img{
+    width: 100%;
+    height: auto;
+   
+}
+.products{
+    background-color: #FFFAFA;
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-gap: 10px;
+    min-height: 50vh;
+    justify-content: center;
+}
+.heart-icon{
+    position: 20px;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: #ee1c47;
+
+}
+.ratting i{
+    color: #111;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.name{
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+}
+.price{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.details button{
+    padding: 12px 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #ff622e;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+@media (max-width: 941px) {
+    .products{
+        grid-template-columns: repeat(2, 330px);
+    }
+
+}
+@media (max-width: 627px) {
+    .products{
+        grid-template-columns: repeat(1, 330px);
+    }
+}
+

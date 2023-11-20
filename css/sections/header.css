@@ -1,0 +1,318 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 0px 2rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    top: 0;
+    position: fixed; 
+    z-index: 1;
+}
+.line{
+    width: 25px;
+    padding: 2.5px 0px;  
+}
+.bars{
+    cursor: pointer;
+    display: none;
+}
+/* .authentication */
+.authen{
+    display: flex;
+    font-size: 0.9rem;
+    gap: 10px;
+}
+.authen a{
+    color: #000;
+    font-size: 0.8rem;
+    padding: 0px 5px;
+}
+/* authentication end */
+/* signup form */
+.signup-form{
+    backdrop-filter: blur(50px);
+    background-color: rgb(43, 43, 43,.2);
+    position: absolute;
+    width: 250px;
+    height: auto;
+    right: 30px;
+    top: 70px;
+    padding: 0px 3rem;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+.signup-form>.form{
+    margin: 30px auto;
+    font-size: 16px;
+    color: #0c0c0c;
+    letter-spacing: -0.05em;
+    display: flex;
+    flex-direction: column;
+}
+.signup-form input[type=email],input[type=text],input[type=password]{
+    border: none;
+    outline: none;
+    box-shadow: inset 0 0 10px #eee;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.signup-form button{
+    padding: 2px 4.2rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: 3px 0;
+    background-color: #ff622e;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sign-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+    padding: 10px 0;
+}
+.signup-form a{
+    background-color: #252525;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+.circle{
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    padding: 3px;
+    margin: 4px 0;
+    background-color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+/* end signup form */
+
+/* login form */
+.arrow-up{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #6b6969;
+    right: 151px;
+    top: 55px;
+    cursor: pointer;
+    display: none;
+   
+}
+.login-form{
+    backdrop-filter: blur(50px);
+    background-color: rgb(43, 43, 43,.2);
+    position: absolute;
+    width: 250px;
+    height: auto;
+    right: 58px;
+    top: 70px;
+    padding: 0px 3rem;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+.login-form>.form{
+    margin: 30px auto;
+    font-size: 16px;
+    color: #0c0c0c;
+    letter-spacing: -0.05em;
+    display: flex;
+    flex-direction: column;
+}
+.login-form input[type=email],input[type=password]{
+    border: none;
+    outline: none;
+    box-shadow: inset 0 0 10px #eee;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.login-form button{
+    padding: 2px 4.2rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: 3px 0;
+    background-color: #ff622e;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* login form end */
+.cart{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: 19px;
+}
+.cart button{
+    border: none;
+    outline: none;
+    background: none;
+}
+.cartCount{
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+}
+.links{
+    display: flex;
+    gap: 25px;
+    font-size: 0.9rem;
+    
+}
+
+.links li{
+    list-style: none;
+}
+.links li a{
+    text-decoration: none;
+    color: #000;
+}
+.header>li{
+    list-style: none;
+}
+.header> li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.cartcon{
+    display: none;
+    position: absolute;
+    min-height: 20vh;
+    backdrop-filter: blur(50px);
+    background-color: rgba(201, 197, 197, 0.2);
+    width: 25rem;
+    margin: 24px -21rem;
+    border-radius: 18px;
+    cursor: default;
+    /* display: none; */
+}
+.cartsec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    transition: all 2s ease-in-out;
+}
+.cartcon h3{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 8px;
+    background-color: #ff622e;
+    color: #fff;
+}
+.product-list >img{
+    width: 40px;
+    border-radius: 5px;
+}
+.product-list  .fas{
+    color: black;
+    font-size: 14px;
+}
+.product-list{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px ;
+    background-color: #fff;
+    margin: 5px 0px;
+}
+.cartfooter{
+    display: flex ;
+    background-color: #252525;
+    padding: 10px 0px;
+
+}
+.cartfooter button{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+.subtotal{
+    font-weight: bold;
+    padding: 5px 35px;
+}
+.closeBtn{
+    background-color: rgb(236, 31, 31);
+}
+.checkoutBtn{
+    background-color: rgb(6, 204, 6);
+}
+.units{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.deleteBtn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.cartIcon{
+    cursor: pointer;
+}
+/* cart container */
+.show{
+    
+    display: block;
+    transform: rotateY(-360deg);
+}
+/* @media (max-width: 1000px) {
+    .products-Con{
+        grid-template-columns: repeat(2, 330px);
+    }
+} */
+.showSignup{
+    display: block;
+    width: 24rem;
+    transform: rotateY(-360deg);
+}
+.showSignin{
+    display: block;
+    width: 24rem;
+    transform: rotateY(-360deg);
+}
+@media (max-width: 768px) {
+    .header{
+        .links{
+            display: none;
+        }
+        .bars{
+            padding: 0 10px;
+        }
+        .bars{
+            display: block;
+        }
+        
+    }
+}

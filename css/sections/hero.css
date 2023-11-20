@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poiret+One&family=Roboto&family=Urbanist:wght@300&display=swap');
+.hero{
+    height: 80vh;
+    background-image: url("/assets/hero.jpg");
+    width: 100%;
+    margin-top: 110px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.heroel{
+    padding: 5rem 2rem;
+    
+}                                                                      
+.heroel h2{
+    font-size: 70px;
+    font-family: 'Caveat', cursive;
+    color: #fff;
+}
+.heroel p{
+    font-size: 30px;
+    padding: 2rem 0px;
+    font-family: 'Caveat', cursive;
+    color: #fff;
+}
+.cta{
+    margin: 10px 0px;
+    padding: 15px 25px;
+    background-color: #ff622e;
+    border-radius: 10px;
+    transition:ease 1s;
+    font-weight: bold;
+  
+}
+.cta:hover{
+    border: 1px solid #fff;
+    color: #ff622e;
+    background-color: transparent;
+    transform: scale(.9);
+}
+.heroel a{
+    color: #fff;
+
+}

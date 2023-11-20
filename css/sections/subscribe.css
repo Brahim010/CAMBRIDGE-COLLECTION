@@ -1,0 +1,49 @@
+.subsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 55px 2rem;
+}
+.con{
+width: 50%;
+
+}
+.con img{
+    width: 100%;
+}
+#con2{
+    text-align: center;
+    padding: 60px;
+    background-color: #f8f8f8;
+    font-size: 20px;
+    line-height: 2rem;
+
+}
+#con2 input{
+    padding: 5px 2rem;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+.btn{
+    padding: 5px 5rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ff622e;
+    color: #fff;
+    border-radius: 16px;
+}
+@media (max-width: 680px) {
+    .subsContainer {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr ;
+       
+    }
+    .con{
+        width: 100%;
+    }
+    
+
+}
+
